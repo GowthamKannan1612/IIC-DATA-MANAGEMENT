@@ -1,0 +1,151 @@
+/* General Layout */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0b1121;
+  padding: 10px 20px;
+  height: 50px;
+}
+
+.navbar h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+/* Search Bar */
+.search-container {
+  display: inline-flex;
+  position: relative;
+  margin-left: 20px;
+}
+
+.search-bar {
+  background-color: #0b1121;
+  color: #ffffff;
+  padding: 5px 10px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+}
+
+.search-bar::placeholder {
+  color: #ffffff;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 16px;
+  width: 16px;
+}
+
+/* Right section with user info */
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.notification-icon {
+  margin-right: 10px;
+  height: 20px;
+  width: 20px;
+}
+
+.profile-image {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Content Layout */
+.content {
+  display: flex;
+  height: calc(100vh - 50px);
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #2a2f3d;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures Help stays at bottom */
+}
+
+.sidebar-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu li {
+  margin: 10px 0;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.sidebar-menu li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.submenu {
+  padding-left: 20px;
+}
+
+.submenu ul {
+  list-style-type: none;
+  padding-left: 15px;
+  margin: 10px 0;
+  color: #b8c6db;
+}
+
+.submenu li:hover {
+  color: white;
+}
+
+/* Help Item */
+.help-item {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  margin-top: auto;  /* Push it to the bottom */
+}
+
+.help-item img {
+  height: 16px;
+  width: 16px;
+  margin-right: 5px;
+}
+
+/* Main Content Area */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #f4f4f9;
+  overflow-y: auto;
+}

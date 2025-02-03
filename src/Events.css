@@ -1,0 +1,54 @@
+/* Events Table Container */
+.events-container {
+  padding: 20px;
+}
+
+/* Title Styling */
+.custom-title {
+  color: #3498db; /* Change the color to anything you'd like */
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Search Bar Styling */
+.search-bar-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start; /* Align to the left */
+}
+
+.search-bar {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.small-width {
+  width: 300px; /* Reduce the search bar width */
+}
+
+/* Events Table Styling */
+.events-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.events-table th, .events-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.events-table th {
+  background-color: #0b1121;
+  color: white;
+}
+
+.events-table tr:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.events-table td {
+  color: #333;
+}

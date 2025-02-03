@@ -1,0 +1,157 @@
+/* General Layout */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0b1121; /* Navbar background color */
+  padding: 10px 20px;
+  height: 50px;
+}
+
+.navbar h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+/* Search Bar Container */
+.search-container {
+  display: inline-flex;
+  position: relative;
+  margin-left: 20px;
+}
+
+.search-bar {
+  background-color: #0b1121; /* Matches navbar background color */
+  color: #ffffff; /* Text color matching menu text color */
+  padding: 5px 10px;
+  border: 1px solid #ffffff; /* Always visible border */
+  border-radius: 4px;
+}
+
+.search-bar::placeholder {
+  color: #ffffff; /* Text color for the placeholder */
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 16px;
+  width: 16px;
+}
+
+/* Right section with user info */
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.notification-icon {
+  margin-right: 10px;
+  height: 20px;
+  width: 20px;
+}
+
+.profile-image {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Content Layout */
+.content {
+  display: flex;
+  height: calc(100vh - 50px);
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #2a2f3d;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu li {
+  margin: 10px 0;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.help-item {
+  font-size: 12px; /* Small size for the Help item */
+}
+
+/* Help Item */
+.help-item img {
+  height: 16px; /* Size of the help icon */
+  width: 16px;
+  margin-right: 5px; /* Space between icon and text */
+}
+
+.sidebar-menu li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.submenu {
+  padding-left: 20px;
+}
+
+.submenu ul {
+  list-style-type: none;
+  padding-left: 15px;
+  margin: 10px 0;
+  color: #b8c6db;
+}
+
+.submenu li:hover {
+  color: white;
+}
+
+/* Main Content Area */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #f4f4f9;
+  overflow-y: auto;
+}
+
+.dashboard-card {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.dashboard-card h3 {
+  margin-bottom: 10px;
+}
